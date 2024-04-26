@@ -9,6 +9,12 @@ The bulk of the code for this project can be attributed to [**this tutorial**](h
 
 ---
 
+## *DO NOTE*
+This documentation has some grammatical errors in the text AND flowcharts.
+Updates are coming soon!
+
+---
+
 ## Introduction
 As mentioned above, this script was created for practice as a beginner in 
 graphics programming. The goal of this script is to process an image of a 
@@ -35,7 +41,7 @@ Currently, there are a few problems that I anticipate fixing at some point:
    values of 77.78%. It might be some incredibly small and obvious math error 
    that I've overlooked.
 
-* *Also note*: Using our previous logic, if a given quesiton has multiple bubbled
+* *Also note*: Using our previous logic, if a given question has multiple bubbled
 answers, the script will determine that the darkest colored bubble is the 
 provided answer.
 
@@ -50,11 +56,11 @@ This script can be broken down and grouped into a few simple steps:
 &emsp; ![Step 1 Flowchart](media/step1/Step1.png)
 
 #### &ensp; Description
-1. As you can see above, this step is composed of three smaller steps,
+1. As you can see above, this step is composed of three smaller steps:
 image preprocessing, Canny edge detection, and quiz contour detection.
 
 2. The image preprocessing consists of conversion to grayscale, median blur, 
-bilateral filtering.
+and bilateral filtering.
 
 #### &ensp;Example
 
@@ -89,8 +95,8 @@ on the quiz. In simple terms, the perspective transform/warp uses the contours
 from the previous step to match the edges of the image/window to the edges of
 the document/quiz.
 
-2. The second step is an image binarization using Otsu's method,
-which thresholds/normalizes the quiz.
+2. The second step is image binarization using Otsu's method, which
+thresholds/normalizes the quiz.
 
 #### &ensp; Example
 
